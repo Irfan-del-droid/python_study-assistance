@@ -20,45 +20,6 @@ This project demonstrates a complete rule-based AI system that:
 
 ## How to Run
 
-### Web Application (Recommended)
-Run the Flask web application:
-```bash
-# First, install dependencies
-pip install -r requirements.txt
-
-# Then run the web app
-python app.py
-```
-
-Open your browser and navigate to `http://localhost:5000` to access the interactive web interface with a modern UI.
-
-### Deploy to Vercel
-
-This app is ready for deployment to Vercel:
-
-1. **Install Vercel CLI** (optional, for local testing):
-   ```bash
-   npm install -g vercel
-   ```
-
-2. **Deploy to Vercel**:
-   ```bash
-   vercel
-   ```
-
-   Or connect your GitHub repository to Vercel for automatic deployments.
-
-3. **Files for Vercel deployment**:
-   - `vercel.json` - Vercel configuration (routes all requests to `/api/app.py`)
-   - `api/app.py` - Flask application (Vercel serverless function)
-   - `api/study_assistant.py` - Study Assistant core logic
-   - `requirements.txt` - Python dependencies
-   - `.vercelignore` - Files to exclude from deployment
-
-**Important**: The Flask app is located in the `api/` directory as required by Vercel's Python runtime. The root `app.py` is kept for local development.
-
-The application is configured to work seamlessly on Vercel's serverless platform with all HTML, CSS, and JavaScript embedded in the Python code.
-
 ### Interactive Mode (Command Line)
 Run the assistant in interactive chat mode:
 ```bash
@@ -113,4 +74,5 @@ The system uses a hierarchical rule-based approach:
 5. Conversation history tracking
 
 For detailed information, see `PROJECT_REPORT.md`.
+
 
